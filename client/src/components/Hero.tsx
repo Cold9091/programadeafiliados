@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Globe, MessageSquare, Zap } from "lucide-react";
+import heroImage from "../assets/Jovem sorridente com smartphone moderno.png";
 
 export default function Hero() {
   const floatingIcons = [
@@ -109,9 +110,9 @@ export default function Hero() {
               {/* Main image with animated border */}
               <div className="animated-border p-1 rounded-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500" 
-                  alt="Profissional trabalhando com websites" 
-                  className="rounded-xl max-w-full h-auto"
+                  src={heroImage} 
+                  alt="Jovem sorridente com smartphone moderno" 
+                  className="rounded-xl max-w-full h-auto object-cover"
                 />
               </div>
               
