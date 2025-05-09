@@ -96,7 +96,7 @@ export default function FAQSection() {
       }
     }
   };
-  
+
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -112,11 +112,11 @@ export default function FAQSection() {
       <div className="absolute inset-0" style={{ 
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a148c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
       }}></div>
-      
+
       {/* Glowing orbs */}
       <div className="absolute top-20 left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           className="text-center mb-16"
@@ -139,7 +139,7 @@ export default function FAQSection() {
             Tire suas dúvidas sobre o programa de afiliados da CIRCULUS
           </motion.p>
         </motion.div>
-        
+
         {/* FAQ Category Tabs */}
         <div className="max-w-4xl mx-auto mb-10 flex flex-wrap justify-center">
           {faqCategories.map((category) => (
@@ -158,7 +158,7 @@ export default function FAQSection() {
             </motion.button>
           ))}
         </div>
-        
+
         {/* FAQ Accordion with glass effect */}
         <motion.div 
           className="max-w-4xl mx-auto glass-dark rounded-2xl overflow-hidden p-1"
@@ -192,7 +192,7 @@ export default function FAQSection() {
             </Accordion>
           </div>
         </motion.div>
-        
+
         {/* Still have questions */}
         <motion.div 
           className="mt-16 text-center bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-10"
