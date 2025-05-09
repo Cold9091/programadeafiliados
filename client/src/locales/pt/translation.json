@@ -1,0 +1,201 @@
+{
+  "general": {
+    "ctaButton": "Quero Me Tornar Afiliado",
+    "seeMore": "Ver Mais",
+    "contactUs": "Entre em Contato"
+  },
+  "header": {
+    "home": "Início",
+    "about": "Sobre",
+    "commissions": "Comissões",
+    "how": "Como Funciona",
+    "faq": "FAQ",
+    "register": "Cadastre-se",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Programa de Afiliados",
+    "subtitle": "INICIE SUA JORNADA",
+    "heading": "Transforme Seu Tempo em Renda Extra",
+    "description": "Ganhe generosas comissões vendendo websites prontos para prestadores de serviço em Angola. Um programa único para empreendedores digitais.",
+    "ctaButton": "Quero Fazer Parte",
+    "joinToday": "Junte-se hoje",
+    "signUpFree": "Inscreva-se gratuitamente"
+  },
+  "stats": {
+    "title": "Números que Impressionam",
+    "websites": "2500+ Websites Vendidos",
+    "clients": "97% Clientes Satisfeitos",
+    "support": "24h Suporte Rápido"
+  },
+  "about": {
+    "subtitle": "SOBRE O PROGRAMA DE AFILIADOS",
+    "title": "Sobre o Programa de Afiliados",
+    "description": "A CIRCULUS oferece uma oportunidade única para você gerar renda extra vendendo websites prontos para prestadores de serviço em Angola. Somos pioneiros em criar soluções digitais acessíveis.",
+    "benefit1": {
+      "title": "100% Online",
+      "description": "Trabalhe de qualquer lugar e a qualquer hora, sem precisar sair de casa."
+    },
+    "benefit2": {
+      "title": "Pagamentos Semanais",
+      "description": "Receba suas comissões todas as semanas, diretamente na sua conta."
+    },
+    "benefit3": {
+      "title": "Sem Experiência Necessária",
+      "description": "Fornecemos todo o treinamento e materiais para você começar imediatamente."
+    }
+  },
+  "commissions": {
+    "subtitle": "REMUNERAÇÃO ATRATIVA",
+    "title": "Tabela de Comissões",
+    "description": "Ganhe generosas comissões por cada venda realizada e aumente sua renda substancialmente",
+    "package": "Pacote",
+    "price": "Preço",
+    "basicPackage": {
+      "name": "Pacote Básico",
+      "description": "Site simples e informativo"
+    },
+    "professionalPackage": {
+      "name": "Pacote Profissional",
+      "description": "Site completo com recursos avançados"
+    },
+    "premiumPackage": {
+      "name": "Pacote Premium",
+      "description": "Site exclusivo com integrações e funcionalidades premium"
+    },
+    "popular": "POPULAR",
+    "beginner": "Iniciante",
+    "pro": "Pro",
+    "whiteLabel": "White-Label",
+    "examplesTitle": "Exemplos de Ganhos",
+    "example1": {
+      "title": "5 vendas Pacote Premium (Pro)",
+      "value": "300.000 Kz",
+      "timeframe": "em até 2 semanas"
+    },
+    "example2": {
+      "title": "10 vendas Pacote Profissional (Pro)",
+      "value": "400.000 Kz",
+      "timeframe": "em até 3 semanas"
+    },
+    "example3": {
+      "title": "10 vendas Pacote Premium (White-Label)",
+      "value": "700.000 Kz",
+      "timeframe": "em até 1 mês"
+    },
+    "earningsPotential": "Potencial de Ganhos",
+    "earningsDescription": "Ao se tornar um afiliado CIRCULUS, seu potencial de ganhos é praticamente ilimitado. Nossos afiliados mais ativos conseguem uma renda consistente e progressiva mês após mês.",
+    "exampleEarning": "Exemplo: Afiliado PRO com 10 vendas/mês",
+    "monthlyValue": "+ 500.000 Kz mensais",
+    "feature1": {
+      "title": "Sem Teto de Ganhos",
+      "description": "Não há limite para o número de clientes que você pode indicar"
+    },
+    "feature2": {
+      "title": "Comissões Progressivas",
+      "description": "Quanto mais você vende, maiores são suas comissões percentuais"
+    },
+    "feature3": {
+      "title": "Pagamentos Semanais",
+      "description": "Receba suas comissões toda semana por transferência ou pix"
+    }
+  },
+  "calculator": {
+    "subtitle": "CALCULE AGORA",
+    "title": "Quanto Posso Ganhar?",
+    "description": "Use nossa calculadora para simular seus ganhos como afiliado CIRCULUS",
+    "calculatorTitle": "Calculadora de Comissões",
+    "websiteType": "Tipo de Website",
+    "selectWebsite": "Selecione o tipo de website",
+    "salesPerMonth": "Vendas por Mês",
+    "sale": "venda",
+    "sales": "vendas",
+    "affiliateLevel": "Seu Nível de Afiliado",
+    "results": "Seus Resultados",
+    "monthlyEarnings": "Ganhos Mensais Estimados:",
+    "annualEarnings": "Ganhos Anuais Estimados:",
+    "tip1": "Aumente seu nível e ganhe comissões maiores",
+    "tip2": "Comissões para {{level}} são de {{rate}}%",
+    "tip3": "Receba pagamentos semanalmente"
+  },
+  "howItWorks": {
+    "subtitle": "PROCESSO SIMPLIFICADO",
+    "title": "Como Funciona",
+    "description": "Um processo simples de 4 passos para começar a ganhar suas comissões e transformar seu tempo em renda",
+    "step1": {
+      "title": "Inscreve-se",
+      "description": "Preencha o formulário de cadastro e entre para o programa de afiliados CIRCULUS."
+    },
+    "step2": {
+      "title": "Recebe Material",
+      "description": "Acesse todo o material promocional e treinamentos para começar suas vendas."
+    },
+    "step3": {
+      "title": "Vende com seu Link",
+      "description": "Compartilhe seu link personalizado ou código de afiliado com potenciais clientes."
+    },
+    "step4": {
+      "title": "Recebe Comissão",
+      "description": "Após confirmação do pagamento, receba sua comissão diretamente na sua conta."
+    },
+    "supportTitle": "Apoio Total Para Seu Sucesso",
+    "supportFeature1": "Treinamento completo e atualizado",
+    "supportFeature2": "Materiais de marketing de alta conversão",
+    "supportFeature3": "Suporte técnico 7 dias por semana",
+    "supportFeature4": "Dashboard exclusivo para acompanhamento",
+    "awardedProgram": "Programa Premiado",
+    "exclusiveOpportunity": "Oportunidade Exclusiva em Angola",
+    "joinCta": "Quero fazer parte"
+  },
+  "faq": {
+    "subtitle": "PERGUNTAS FREQUENTES",
+    "title": "Respostas para Suas Dúvidas",
+    "description": "Tudo o que você precisa saber para começar sua jornada como afiliado CIRCULUS",
+    "question1": "Como funciona o programa de afiliados?",
+    "answer1": "Você se cadastra gratuitamente, recebe seu link ou código de afiliado, divulga os produtos e ganha comissões por cada venda realizada através da sua indicação.",
+    "question2": "Quanto posso ganhar como afiliado?",
+    "answer2": "Os ganhos dependem do seu empenho e estratégia de divulgação. Temos afiliados gerando desde 150.000 Kz até mais de 1.000.000 Kz por mês.",
+    "question3": "É necessário ter experiência prévia?",
+    "answer3": "Não! Fornecemos todo o treinamento necessário, materiais e suporte para que você comece a vender mesmo sem experiência anterior.",
+    "question4": "Como recebo meus pagamentos?",
+    "answer4": "Os pagamentos são feitos semanalmente via transferência bancária ou outros métodos disponíveis em Angola.",
+    "question5": "Preciso ter um site para ser afiliado?",
+    "answer5": "Não é obrigatório. Você pode promover através de redes sociais, WhatsApp, email marketing ou qualquer outro canal que preferir.",
+    "question6": "Existe alguma taxa para participar do programa?",
+    "answer6": "Não, a inscrição no programa de afiliados CIRCULUS é totalmente gratuita."
+  },
+  "registration": {
+    "subtitle": "JUNTE-SE A NÓS",
+    "title": "Torne-se um Afiliado",
+    "description": "Preencha o formulário abaixo para iniciar sua jornada como afiliado CIRCULUS e comece a transformar seu tempo em renda extra",
+    "limitedSpots": "Vagas Limitadas:",
+    "spotsRemaining": "12 vagas restantes",
+    "formTitle": "Cadastro de Afiliado",
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "Digite seu nome completo",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "+244 XXX XXX XXX",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu.email@exemplo.com",
+    "provinceLabel": "Província",
+    "provincePlaceholder": "Selecione sua província",
+    "areaLabel": "Área de Atuação",
+    "areaPlaceholder": "Ex: Marketing Digital, Designer, etc.",
+    "submitButton": "Enviar Cadastro",
+    "privacyPolicy": "Ao enviar, você concorda com nossa Política de Privacidade",
+    "successTitle": "Cadastro Enviado!",
+    "successMessage": "Recebemos seu cadastro. Em breve entraremos em contato pelo WhatsApp para os próximos passos.",
+    "errorTitle": "Erro no Envio",
+    "errorMessage": "Ocorreu um erro ao enviar seu cadastro. Por favor, tente novamente ou contate nosso suporte."
+  },
+  "footer": {
+    "about": "Sobre a CIRCULUS",
+    "aboutText": "A CIRCULUS é uma empresa pioneira em soluções digitais para prestadores de serviço em Angola, com foco em websites prontos e marketing digital.",
+    "links": "Links Rápidos",
+    "contact": "Contato",
+    "address": "Luanda, Angola",
+    "phone": "+244 XXX XXX XXX",
+    "email": "afiliados@circulus.co.ao",
+    "copyright": "© 2025 CIRCULUS. Todos os direitos reservados."
+  }
+}

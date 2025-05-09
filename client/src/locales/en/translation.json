@@ -1,0 +1,201 @@
+{
+  "general": {
+    "ctaButton": "I Want to Become an Affiliate",
+    "seeMore": "See More",
+    "contactUs": "Contact Us"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "commissions": "Commissions",
+    "how": "How It Works",
+    "faq": "FAQ",
+    "register": "Register",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Affiliate Program",
+    "subtitle": "START YOUR JOURNEY",
+    "heading": "Transform Your Time into Extra Income",
+    "description": "Earn generous commissions selling ready-made websites for service providers in Angola. A unique program for digital entrepreneurs.",
+    "ctaButton": "I Want to Join",
+    "joinToday": "Join today",
+    "signUpFree": "Sign up for free"
+  },
+  "stats": {
+    "title": "Impressive Numbers",
+    "websites": "2500+ Websites Sold",
+    "clients": "97% Satisfied Clients",
+    "support": "24h Fast Support"
+  },
+  "about": {
+    "subtitle": "ABOUT THE AFFILIATE PROGRAM",
+    "title": "About the Affiliate Program",
+    "description": "CIRCULUS offers a unique opportunity for you to generate extra income by selling ready-made websites for service providers in Angola. We are pioneers in creating accessible digital solutions.",
+    "benefit1": {
+      "title": "100% Online",
+      "description": "Work from anywhere at any time, without having to leave home."
+    },
+    "benefit2": {
+      "title": "Weekly Payments",
+      "description": "Receive your commissions every week, directly into your account."
+    },
+    "benefit3": {
+      "title": "No Experience Needed",
+      "description": "We provide all the training and materials for you to start immediately."
+    }
+  },
+  "commissions": {
+    "subtitle": "ATTRACTIVE COMPENSATION",
+    "title": "Commission Table",
+    "description": "Earn generous commissions for each sale made and substantially increase your income",
+    "package": "Package",
+    "price": "Price",
+    "basicPackage": {
+      "name": "Basic Package",
+      "description": "Simple and informative website"
+    },
+    "professionalPackage": {
+      "name": "Professional Package",
+      "description": "Complete website with advanced features"
+    },
+    "premiumPackage": {
+      "name": "Premium Package",
+      "description": "Exclusive website with integrations and premium features"
+    },
+    "popular": "POPULAR",
+    "beginner": "Beginner",
+    "pro": "Pro",
+    "whiteLabel": "White-Label",
+    "examplesTitle": "Earnings Examples",
+    "example1": {
+      "title": "5 Premium Package sales (Pro)",
+      "value": "300,000 Kz",
+      "timeframe": "in up to 2 weeks"
+    },
+    "example2": {
+      "title": "10 Professional Package sales (Pro)",
+      "value": "400,000 Kz",
+      "timeframe": "in up to 3 weeks"
+    },
+    "example3": {
+      "title": "10 Premium Package sales (White-Label)",
+      "value": "700,000 Kz",
+      "timeframe": "in up to 1 month"
+    },
+    "earningsPotential": "Earnings Potential",
+    "earningsDescription": "By becoming a CIRCULUS affiliate, your earning potential is virtually unlimited. Our most active affiliates achieve consistent and progressive income month after month.",
+    "exampleEarning": "Example: PRO Affiliate with 10 sales/month",
+    "monthlyValue": "+ 500,000 Kz monthly",
+    "feature1": {
+      "title": "No Earnings Cap",
+      "description": "There is no limit to the number of clients you can refer"
+    },
+    "feature2": {
+      "title": "Progressive Commissions",
+      "description": "The more you sell, the higher your percentage commissions"
+    },
+    "feature3": {
+      "title": "Weekly Payments",
+      "description": "Receive your commissions every week by bank transfer or pix"
+    }
+  },
+  "calculator": {
+    "subtitle": "CALCULATE NOW",
+    "title": "How Much Can I Earn?",
+    "description": "Use our calculator to simulate your earnings as a CIRCULUS affiliate",
+    "calculatorTitle": "Commission Calculator",
+    "websiteType": "Website Type",
+    "selectWebsite": "Select website type",
+    "salesPerMonth": "Sales per Month",
+    "sale": "sale",
+    "sales": "sales",
+    "affiliateLevel": "Your Affiliate Level",
+    "results": "Your Results",
+    "monthlyEarnings": "Estimated Monthly Earnings:",
+    "annualEarnings": "Estimated Annual Earnings:",
+    "tip1": "Increase your level and earn higher commissions",
+    "tip2": "Commissions for {{level}} are {{rate}}%",
+    "tip3": "Receive payments weekly"
+  },
+  "howItWorks": {
+    "subtitle": "SIMPLIFIED PROCESS",
+    "title": "How It Works",
+    "description": "A simple 4-step process to start earning your commissions and transform your time into income",
+    "step1": {
+      "title": "Sign Up",
+      "description": "Fill out the registration form and join the CIRCULUS affiliate program."
+    },
+    "step2": {
+      "title": "Receive Materials",
+      "description": "Access all promotional materials and training to start your sales."
+    },
+    "step3": {
+      "title": "Sell with your Link",
+      "description": "Share your personalized link or affiliate code with potential customers."
+    },
+    "step4": {
+      "title": "Receive Commission",
+      "description": "After payment confirmation, receive your commission directly into your account."
+    },
+    "supportTitle": "Total Support For Your Success",
+    "supportFeature1": "Complete and updated training",
+    "supportFeature2": "High-conversion marketing materials",
+    "supportFeature3": "7-day technical support",
+    "supportFeature4": "Exclusive dashboard for tracking",
+    "awardedProgram": "Awarded Program",
+    "exclusiveOpportunity": "Exclusive Opportunity in Angola",
+    "joinCta": "I want to join"
+  },
+  "faq": {
+    "subtitle": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Answers to Your Questions",
+    "description": "Everything you need to know to start your journey as a CIRCULUS affiliate",
+    "question1": "How does the affiliate program work?",
+    "answer1": "You sign up for free, receive your affiliate link or code, promote the products, and earn commissions for each sale made through your referral.",
+    "question2": "How much can I earn as an affiliate?",
+    "answer2": "Earnings depend on your effort and promotional strategy. We have affiliates generating from 150,000 Kz to over 1,000,000 Kz per month.",
+    "question3": "Is prior experience necessary?",
+    "answer3": "No! We provide all the necessary training, materials, and support for you to start selling even without previous experience.",
+    "question4": "How do I receive my payments?",
+    "answer4": "Payments are made weekly via bank transfer or other methods available in Angola.",
+    "question5": "Do I need to have a website to be an affiliate?",
+    "answer5": "It's not mandatory. You can promote through social networks, WhatsApp, email marketing, or any other channel you prefer.",
+    "question6": "Is there a fee to participate in the program?",
+    "answer6": "No, registration in the CIRCULUS affiliate program is completely free."
+  },
+  "registration": {
+    "subtitle": "JOIN US",
+    "title": "Become an Affiliate",
+    "description": "Fill out the form below to start your journey as a CIRCULUS affiliate and begin transforming your time into extra income",
+    "limitedSpots": "Limited Spots:",
+    "spotsRemaining": "12 spots remaining",
+    "formTitle": "Affiliate Registration",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "+244 XXX XXX XXX",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "provinceLabel": "Province",
+    "provincePlaceholder": "Select your province",
+    "areaLabel": "Area of Expertise",
+    "areaPlaceholder": "Ex: Digital Marketing, Designer, etc.",
+    "submitButton": "Submit Registration",
+    "privacyPolicy": "By submitting, you agree to our Privacy Policy",
+    "successTitle": "Registration Submitted!",
+    "successMessage": "We have received your registration. We will contact you soon via WhatsApp for the next steps.",
+    "errorTitle": "Submission Error",
+    "errorMessage": "An error occurred while submitting your registration. Please try again or contact our support."
+  },
+  "footer": {
+    "about": "About CIRCULUS",
+    "aboutText": "CIRCULUS is a pioneering company in digital solutions for service providers in Angola, focusing on ready-made websites and digital marketing.",
+    "links": "Quick Links",
+    "contact": "Contact",
+    "address": "Luanda, Angola",
+    "phone": "+244 XXX XXX XXX",
+    "email": "affiliates@circulus.co.ao",
+    "copyright": "© 2025 CIRCULUS. All rights reserved."
+  }
+}
