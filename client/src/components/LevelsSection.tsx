@@ -110,10 +110,10 @@ export default function LevelsSection() {
   };
 
   return (
-    <section id="niveis" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="niveis" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-full opacity-70 blur-3xl -z-10 transform translate-x-1/3 -translate-y-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-blue-50 to-teal-50 rounded-full opacity-70 blur-3xl -z-10 transform -translate-x-1/3 translate-y-1/3"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 rounded-full opacity-70 blur-3xl -z-10 transform translate-x-1/3 -translate-y-1/3"></div>
+      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-full opacity-70 blur-3xl -z-10 transform -translate-x-1/3 translate-y-1/3"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
@@ -128,7 +128,7 @@ export default function LevelsSection() {
           </div>
           <h2 className="text-4xl font-bold mb-6 text-gradient">Escada de Níveis</h2>
           <motion.p 
-            className="text-xl max-w-3xl mx-auto text-gray-600"
+            className="text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -159,7 +159,7 @@ export default function LevelsSection() {
                 </div>
               )}
               
-              <div className={`h-full bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 ${level.popular ? 'ring-2 ring-purple-500' : ''}`}>
+              <div className={`h-full bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700 ${level.popular ? 'ring-2 ring-purple-500' : ''}`}>
                 {/* Card header */}
                 <div className={`bg-gradient-to-r ${level.color} text-white p-6`}>
                   <div className="flex items-center mb-3">
@@ -177,14 +177,14 @@ export default function LevelsSection() {
                   <div className="mb-6 space-y-3">
                     {level.features.map((feature, i) => (
                       <div key={i} className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">{feature.name}</span>
-                        <span className="font-medium text-gray-900">{feature.value}</span>
+                        <span className="text-gray-600 dark:text-gray-400 text-sm">{feature.name}</span>
+                        <span className="font-medium text-gray-900 dark:text-gray-200">{feature.value}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <div className="border-t border-gray-100 pt-6 mb-6">
-                    <h4 className="font-bold text-lg mb-3 flex items-center">
+                  <div className="border-t border-gray-100 dark:border-gray-700 pt-6 mb-6">
+                    <h4 className="font-bold text-lg mb-3 flex items-center dark:text-white">
                       <Zap className="h-5 w-5 text-yellow-500 mr-2" />
                       Requisitos:
                     </h4>
@@ -192,12 +192,12 @@ export default function LevelsSection() {
                       {level.requirements.map((req, reqIndex) => (
                         <li key={reqIndex} className="flex items-start">
                           <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{req}</span>
+                          <span className="text-gray-700 dark:text-gray-300">{req}</span>
                         </li>
                       ))}
                     </ul>
                     
-                    <h4 className="font-bold text-lg mb-3 flex items-center">
+                    <h4 className="font-bold text-lg mb-3 flex items-center dark:text-white">
                       <Sparkles className="h-5 w-5 text-blue-500 mr-2" />
                       Benefícios:
                     </h4>
@@ -212,7 +212,7 @@ export default function LevelsSection() {
                           transition={{ delay: benefitIndex * 0.1 + 0.3 }}
                         >
                           <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{benefit}</span>
+                          <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
                         </motion.li>
                       ))}
                     </ul>
@@ -241,7 +241,7 @@ export default function LevelsSection() {
           {sellingPoints.map((point, index) => (
             <motion.div
               key={index}
-              className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow-md"
+              className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-6 rounded-xl shadow-md"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -250,8 +250,8 @@ export default function LevelsSection() {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 {point.icon}
               </div>
-              <h3 className="text-xl font-bold mb-2">{point.title}</h3>
-              <p className="text-gray-600">{point.description}</p>
+              <h3 className="text-xl font-bold mb-2 dark:text-white">{point.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{point.description}</p>
             </motion.div>
           ))}
         </div>
