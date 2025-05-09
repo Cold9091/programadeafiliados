@@ -1,0 +1,109 @@
+Crie um website institucional simples e responsivo para o "Programa de Afiliados da CIRCULUS", uma empresa angolana que vende websites prontos para prestadores de serviço. O objetivo é atrair afiliados e parceiros white-label. O site deve conter as seguintes seções:
+
+📌 ESTRUTURA DAS SEÇÕES DO SITE
+Cabeçalho (Header)
+
+Logo da CIRCULUS
+
+Menu com âncoras: "Sobre", "Como Funciona", "Níveis", "Comissões", "Cadastro"
+
+Hero Section (Destaque inicial)
+
+Título: “Ganhe dinheiro vendendo websites prontos com a CIRCULUS”
+
+Subtítulo: “Comissões de até 70.000 Kz por venda. Comece hoje mesmo.”
+
+Botão: “Quero me cadastrar”
+
+Seção: Sobre o Programa
+
+Breve descrição de como o afiliado pode gerar renda vendendo sites
+
+Destaques: 100% online, pagamentos semanais, sem experiência necessária
+
+Seção: Como Funciona
+
+Passo a passo:
+
+Inscreve-se
+
+Recebe material de divulgação
+
+Vende com seu link ou código
+
+Recebe comissão após pagamento confirmado
+
+Seção: Escada de Níveis
+
+Tabela ou cards com os 3 níveis:
+
+Afiliado Iniciante
+
+Afiliado Pro
+
+Parceiro White-Label
+
+Mostrar benefícios e o que é necessário para subir de nível
+
+Seção: Tabela de Comissões
+
+Mostrar plano e comissão por nível:
+
+Pacote de 90 mil → 20k / 30k / 40k
+
+Pacote de 140 mil → 30k / 40k / 50k
+
+Pacote de 190 mil → 40k / 60k / 70k
+
+Seção: Benefícios dos Afiliados
+
+Apoio publicitário
+
+Materiais prontos
+
+Curso de vendas básico
+
+Suporte por WhatsApp
+
+Seção: Cadastro
+
+Formulário com os seguintes campos:
+
+Nome completo
+
+Número de WhatsApp
+
+Email
+
+Província
+
+Tipo de atuação (freelancer, agência, empresa, estudante, etc.)
+
+Botão: “Cadastrar e entrar no programa”
+
+❗ O formulário deve enviar os dados para um email (ex: circulusafiliados@gmail.com) ou pode ser armazenado em uma planilha Google via script.
+
+Rodapé (Footer)
+
+Contato da empresa (email, WhatsApp)
+
+Links úteis
+
+Direitos autorais
+
+🎨 Estilo Visual (opcional, se a ferramenta permitir customização):
+Cores: Roxo escuro (#4A148C), Branco (#FFFFFF), Cinza claro (#F5F5F5)
+
+Fonte moderna e legível
+
+Ícones simples para explicar os passos
+
+Imagens de smartphones ou computadores com sites prontos
+
+✅ Recursos extras (opcional):
+Grupo de WhatsApp com link no final da página
+
+Seção de depoimentos (falso placeholder para começar)
+
+FAQ com perguntas frequentes
+
