@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -44,13 +45,14 @@ export default function Header() {
         </motion.div>
         
         {/* Mobile menu button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center">
+          <ThemeToggle />
           <Button
             variant="ghost" 
             size="icon"
             onClick={toggleMobileMenu}
             aria-label="Menu"
-            className="text-white"
+            className="text-white ml-2"
           >
             {mobileMenuOpen ? (
               <X className="h-6 w-6 text-white" />
@@ -61,7 +63,7 @@ export default function Header() {
         </div>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-1">
+        <nav className="hidden md:flex items-center space-x-1">
           {menuItems.map((item, index) => (
             <motion.div
               key={item.href}
@@ -89,6 +91,14 @@ export default function Header() {
             >
               <span className="relative z-10">Cadastro</span>
             </a>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="ml-2"
+          >
+            <ThemeToggle />
           </motion.div>
         </nav>
       </div>
