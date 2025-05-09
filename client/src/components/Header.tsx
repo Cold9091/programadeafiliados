@@ -3,8 +3,10 @@ import { Menu, X, ChevronDown, BookOpen, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Link, useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,6 +15,7 @@ export default function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const isMobile = useIsMobile();
   const [location] = useLocation();
+  const { t } = useTranslation();
 
   // Handle scroll effect
   useEffect(() => {
@@ -45,11 +48,11 @@ export default function Header() {
   };
 
   const menuItems = [
-    { name: "Sobre", href: "#sobre", icon: "✨" },
-    { name: "Como Funciona", href: "#como-funciona", icon: "🔄" },
+    { name: t("header.about"), href: "#sobre", icon: "✨" },
+    { name: t("header.how"), href: "#como-funciona", icon: "🔄" },
     { name: "Níveis", href: "#niveis", icon: "⭐" },
-    { name: "Comissões", href: "#comissoes", icon: "💰" },
-    { name: "FAQ", href: "#faq", icon: "❓" },
+    { name: t("header.commissions"), href: "#comissoes", icon: "💰" },
+    { name: t("header.faq"), href: "#faq", icon: "❓" },
   ];
 
   // Close mobile menu when resizing to desktop
@@ -163,7 +166,7 @@ export default function Header() {
               className={`flex items-center gap-1 text-sm ${location === '/' ? 'text-purple-300 border-b-2 border-purple-500' : 'text-white hover:text-purple-300'}`}
             >
               <Home className="w-4 h-4" />
-              <span>Início</span>
+              <span>{t('header.home')}</span>
             </Button>
           </Link>
           <Link href="/blog">
@@ -181,6 +184,7 @@ export default function Header() {
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
           <ThemeToggle />
+          <LanguageSwitcher />
           <Button
             variant="ghost" 
             size="icon"
@@ -269,6 +273,15 @@ export default function Header() {
             className="ml-2"
           >
             <ThemeToggle />
+          </motion.div>
+          <motion.div
+            custom={menuItems.length + 2}
+            initial="hidden"
+            animate="visible"
+            variants={menuItemVariants}
+            className="ml-2"
+          >
+            <LanguageSwitcher />
           </motion.div>
         </nav>
       </div>
