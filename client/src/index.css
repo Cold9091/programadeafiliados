@@ -101,6 +101,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.75rem;
 }
 
+.dark .glass-commissions {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* Dark mode adjustments */
 .dark .glass {
   background: rgba(30, 30, 30, 0.3);
@@ -108,8 +114,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark .glass-dark {
-  background: rgba(15, 15, 15, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 15, 15, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 /* Modern gradients */
@@ -322,7 +329,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .dark .glass-dark table th,
 .dark .glass-dark table td {
-  @apply text-gray-200 border-gray-700;
+  @apply text-gray-100 border-gray-700;
+}
+
+.dark .glass-dark table th {
+  @apply bg-gray-900/50;
+}
+
+.dark .glass-dark table tr:hover {
+  @apply bg-gray-800/50;
 }
 
 .dark .bg-gradient-to-b.from-gray-100.to-white {

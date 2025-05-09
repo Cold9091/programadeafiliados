@@ -149,10 +149,13 @@ export default function CommissionsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="glass-commissions dark:glass-dark">
-            <table className="w-full">
+          <div className="glass-commissions dark:glass-dark relative">
+            {/* Dark mode overlay to increase contrast */}
+            <div className="absolute inset-0 bg-gray-900/80 hidden dark:block rounded-xl"></div>
+            
+            <table className="w-full relative z-10">
               <thead>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
+                <tr className="border-b border-gray-200 dark:border-gray-600">
                   <th className="py-5 px-6 text-left font-poppins text-gray-800 dark:text-white">Pacote</th>
                   <th className="py-5 px-6 text-left font-poppins text-gray-800 dark:text-white">Preço</th>
                   <th className="py-5 px-6 text-left font-poppins text-gray-800 dark:text-white">
@@ -185,7 +188,7 @@ export default function CommissionsSection() {
                 {commissions.map((commission, index) => (
                   <motion.tr 
                     key={index} 
-                    className={`border-b border-gray-200/50 dark:border-gray-700/50 hover:bg-gray-100/50 dark:hover:bg-white/5 ${commission.popular ? 'bg-gray-100/80 dark:bg-white/10' : ''}`}
+                    className={`border-b border-gray-200/50 dark:border-gray-700/50 hover:bg-gray-100/50 dark:hover:bg-white/10 ${commission.popular ? 'bg-gray-100/80 dark:bg-white/20' : ''}`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -201,7 +204,7 @@ export default function CommissionsSection() {
                             </span>
                           )}
                         </div>
-                        <div className="text-sm text-gray-600 dark:text-white/70">{commission.description}</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-200">{commission.description}</div>
                       </div>
                     </td>
                     <td className="py-5 px-6">
@@ -209,15 +212,15 @@ export default function CommissionsSection() {
                     </td>
                     <td className="py-5 px-6">
                       <div className="text-green-600 dark:text-green-400 font-bold">{commission.beginner.value}</div>
-                      <div className="text-gray-500 dark:text-white/60 text-sm">{commission.beginner.percent}</div>
+                      <div className="text-gray-500 dark:text-gray-300 text-sm">{commission.beginner.percent}</div>
                     </td>
                     <td className="py-5 px-6">
                       <div className="text-green-600 dark:text-green-400 font-bold">{commission.pro.value}</div>
-                      <div className="text-gray-500 dark:text-white/60 text-sm">{commission.pro.percent}</div>
+                      <div className="text-gray-500 dark:text-gray-300 text-sm">{commission.pro.percent}</div>
                     </td>
                     <td className="py-5 px-6">
                       <div className="text-green-600 dark:text-green-400 font-bold">{commission.whiteLabel.value}</div>
-                      <div className="text-gray-500 dark:text-white/60 text-sm">{commission.whiteLabel.percent}</div>
+                      <div className="text-gray-500 dark:text-gray-300 text-sm">{commission.whiteLabel.percent}</div>
                     </td>
                   </motion.tr>
                 ))}
