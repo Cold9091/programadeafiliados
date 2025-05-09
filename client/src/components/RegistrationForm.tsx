@@ -186,8 +186,14 @@ export default function RegistrationForm() {
                     <FaCheckCircle className="w-10 h-10" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Cadastro Realizado com Sucesso!</h3>
-                  <p className="text-gray-600 mb-8 max-w-md">
+                  <p className="text-gray-600 mb-4 max-w-md">
                     Parabéns! Seu cadastro foi recebido. Nossa equipe entrará em contato em breve para dar as boas-vindas e fornecer os próximos passos.
+                  </p>
+                  <p className="text-gray-600 mb-8 max-w-md flex items-center justify-center">
+                    <Mail className="mr-2 h-4 w-4 text-primary" /> 
+                    <a href="mailto:circulus.ao@gmail.com" className="text-primary hover:underline">
+                      circulus.ao@gmail.com
+                    </a>
                   </p>
                   <div className="flex space-x-4">
                     <Button 
@@ -200,7 +206,7 @@ export default function RegistrationForm() {
                       variant="outline"
                       asChild
                     >
-                      <a href="https://chat.whatsapp.com/example">
+                      <a href="https://chat.whatsapp.com/FpqmbYg9lop62rocgJNDgy" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className="mr-2" /> Entrar no Grupo
                       </a>
                     </Button>
@@ -465,7 +471,9 @@ export default function RegistrationForm() {
                   Entre para o nosso grupo e conheça outros afiliados, tire dúvidas e receba atualizações.
                 </p>
                 <a 
-                  href="https://chat.whatsapp.com/example" 
+                  href="https://chat.whatsapp.com/FpqmbYg9lop62rocgJNDgy" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center bg-green-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300"
                 >
                   <FaWhatsapp className="mr-2" /> Entrar no Grupo
