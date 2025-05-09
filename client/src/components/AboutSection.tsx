@@ -98,24 +98,6 @@ export default function AboutSection() {
             </motion.div>
           ))}
         </div>
-        
-        {/* Mobile image */}
-        <motion.div 
-          className="flex justify-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-        >
-          <div className="relative w-full max-w-2xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-3xl opacity-20"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600&q=80" 
-              alt="Websites responsivos em diferentes dispositivos" 
-              className="rounded-2xl w-full object-cover shadow-xl relative z-10"
-            />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
