@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, BookOpen, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
   const isMobile = useIsMobile();
+  const [location] = useLocation();
 
   // Handle scroll effect
   useEffect(() => {
@@ -145,12 +147,36 @@ export default function Header() {
           whileHover="hover"
           variants={logoVariants}
         >
-          <a href="#" className="block">
+          <Link href="/" className="block">
             <div className="font-bold text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-indigo-600">
               CIRCULUS
             </div>
-          </a>
+          </Link>
         </motion.div>
+        
+        {/* Navigation icons for Home and Blog */}
+        <div className="hidden md:flex items-center space-x-2 ml-6">
+          <Link href="/">
+            <Button 
+              variant="ghost" 
+              size="sm"
+              className={`flex items-center gap-1 text-sm ${location === '/' ? 'text-purple-300 border-b-2 border-purple-500' : 'text-white hover:text-purple-300'}`}
+            >
+              <Home className="w-4 h-4" />
+              <span>Início</span>
+            </Button>
+          </Link>
+          <Link href="/blog">
+            <Button 
+              variant="ghost" 
+              size="sm"
+              className={`flex items-center gap-1 text-sm ${location === '/blog' || location.startsWith('/blog/') ? 'text-purple-300 border-b-2 border-purple-500' : 'text-white hover:text-purple-300'}`}
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>Blog</span>
+            </Button>
+          </Link>
+        </div>
         
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
@@ -258,6 +284,35 @@ export default function Header() {
             exit="closed"
           >
             <div className="flex flex-col p-4">
+              {/* Navigation to home and blog pages */}
+              <div className="flex border-b border-gray-700/50 pb-3 mb-3">
+                <Link href="/" className="flex-1">
+                  <motion.div
+                    className={`text-white font-medium py-2 transition-colors duration-300 flex items-center justify-center space-x-2 rounded-lg ${
+                      location === '/' ? 'bg-primary-dark/40' : 'hover:bg-primary-dark/20'
+                    }`}
+                    variants={mobileItemVariants}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <Home className="w-5 h-5" />
+                    <span>Início</span>
+                  </motion.div>
+                </Link>
+                <Link href="/blog" className="flex-1">
+                  <motion.div
+                    className={`text-white font-medium py-2 transition-colors duration-300 flex items-center justify-center space-x-2 rounded-lg ${
+                      location === '/blog' || location.startsWith('/blog/') ? 'bg-primary-dark/40' : 'hover:bg-primary-dark/20'
+                    }`}
+                    variants={mobileItemVariants}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <BookOpen className="w-5 h-5" />
+                    <span>Blog</span>
+                  </motion.div>
+                </Link>
+              </div>
+              
+              {/* Página inicial sections */}
               {menuItems.map((item, index) => (
                 <motion.a
                   key={item.href}
