@@ -1,12 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <circle cx="32" cy="32" r="30" fill="url(#paint0_linear)" stroke="white" stroke-width="2"/>
-  <path d="M20 32.5C20 26.9772 24.4772 22.5 30 22.5H34C39.5228 22.5 44 26.9772 44 32.5C44 38.0228 39.5228 42.5 34 42.5H30C24.4772 42.5 20 38.0228 20 32.5Z" stroke="white" stroke-width="3"/>
-  <path d="M27 28.5L27 36.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
-  <path d="M37 28.5L37 36.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
   <defs>
-    <linearGradient id="paint0_linear" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4A148C"/>
-      <stop offset="1" stop-color="#7B1FA2"/>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#4338CA" />
     </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#000" flood-opacity="0.3" />
+    </filter>
   </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#gradient)" filter="url(#shadow)" />
+  <path d="M19 19C19 18.4477 19.4477 18 20 18H28C34.6274 18 40 23.3726 40 30C40 36.6274 34.6274 42 28 42H20C19.4477 42 19 41.5523 19 41V19Z" fill="white" />
+  <path d="M43 22C43 21.4477 43.4477 21 44 21H45C45.5523 21 46 21.4477 46 22V41C46 41.5523 45.5523 42 45 42H44C43.4477 42 43 41.5523 43 41V22Z" fill="white" />
+  <path d="M25 24H28C31.3137 24 34 26.6863 34 30C34 33.3137 31.3137 36 28 36H25V24Z" fill="url(#gradient)" />
 </svg>
