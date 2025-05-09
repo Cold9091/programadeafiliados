@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-poppins text-white leading-tight">
-              <span className="text-gradient">Ganhe dinheiro</span> vendendo websites prontos
+              <span className="text-gradient">Ganhe dinheiro</span> vendendo websites feito por nós
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-lg">

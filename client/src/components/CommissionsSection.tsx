@@ -7,27 +7,27 @@ export default function CommissionsSection() {
       package: "Pacote Básico",
       description: "Site simples e informativo",
       price: "90.000 Kz",
-      beginner: { value: "20.000 Kz", percent: "22%" },
-      pro: { value: "30.000 Kz", percent: "33%" },
-      whiteLabel: { value: "40.000 Kz", percent: "44%" },
+      beginner: { value: "19.800 Kz", percent: "22%" },
+      pro: { value: "29.700 Kz", percent: "33%" },
+      whiteLabel: { value: "39.600 Kz", percent: "44%" },
       popular: false
     },
     {
       package: "Pacote Profissional",
       description: "Site completo com recursos avançados",
       price: "140.000 Kz",
-      beginner: { value: "30.000 Kz", percent: "21%" },
-      pro: { value: "40.000 Kz", percent: "29%" },
-      whiteLabel: { value: "50.000 Kz", percent: "36%" },
+      beginner: { value: "29.500 Kz", percent: "21%" },
+      pro: { value: "40.600 Kz", percent: "29%" },
+      whiteLabel: { value: "50.500 Kz", percent: "36%" },
       popular: true
     },
     {
       package: "Pacote Premium",
       description: "Site exclusivo com integrações e funcionalidades premium",
       price: "190.000 Kz",
-      beginner: { value: "40.000 Kz", percent: "21%" },
-      pro: { value: "60.000 Kz", percent: "32%" },
-      whiteLabel: { value: "70.000 Kz", percent: "37%" },
+      beginner: { value: "39.900 Kz", percent: "21%" },
+      pro: { value: "62.700 Kz", percent: "32%" },
+      whiteLabel: { value: "70.300 Kz", percent: "37%" },
       popular: false
     }
   ];

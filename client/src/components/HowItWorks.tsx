@@ -20,8 +20,8 @@ export default function HowItWorks() {
     },
     {
       number: 3,
-      title: "Vende com seu Link",
-      description: "Compartilhe seu link personalizado ou código de afiliado com potenciais clientes.",
+      title: "Começa as suas Vendas",
+      description: "Quando converter o cliente cria um grupo onde iremos conversar com o cliente e entregar o Website ",
       icon: <Link className="w-6 h-6" />,
       color: "from-blue-600 to-cyan-600"
     },

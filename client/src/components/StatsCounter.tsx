@@ -18,19 +18,19 @@ export default function StatsCounter() {
   const stats: Stat[] = [
     {
       icon: Users,
-      value: 200,
+      value: 10,
       label: "Afiliados Ativos",
       prefix: "+",
     },
     {
       icon: Briefcase,
-      value: 500,
+      value: 100,
       label: "Websites Vendidos",
       prefix: "+",
     },
     {
       icon: DollarSign,
-      value: 3000000,
+      value: 1000000,
       label: "Comissões Pagas",
       suffix: " Kz",
     },

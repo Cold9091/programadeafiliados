@@ -15,7 +15,6 @@ export default function LevelsSection() {
       ],
       benefits: [
         "Material de divulgação básico",
-        "Link de afiliado personalizado",
         "Suporte por WhatsApp",
         "Comissões base"
       ],
@@ -41,7 +40,6 @@ export default function LevelsSection() {
       benefits: [
         "Material de divulgação avançado",
         "Comissões maiores",
-        "Treinamento de vendas avançado",
         "Grupo exclusivo de afiliados"
       ],
       popular: true,
@@ -66,9 +64,7 @@ export default function LevelsSection() {
       benefits: [
         "Revenda com sua marca",
         "Máximas comissões",
-        "Painel administrativo próprio",
         "Equipe de suporte dedicada",
-        "Oportunidade de ter afiliados próprios"
       ],
       popular: false,
       features: [
