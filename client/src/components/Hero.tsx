@@ -87,7 +87,7 @@ export default function Hero() {
             <div className="mt-8 flex items-center">
               <div className="flex -space-x-2">
                 {[...Array(3)].map((_, i) => (
-                  <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+                  <div key={i} className="w-10 h-10 rounded-full bg-white text-purple-700 border-2 border-white flex items-center justify-center text-xs font-bold">
                     {['JM', 'TK', 'SL'][i]}
                   </div>
                 ))}

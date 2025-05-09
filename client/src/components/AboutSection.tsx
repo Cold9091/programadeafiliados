@@ -118,12 +118,12 @@ export default function AboutSection() {
                 transition={{ duration: 0.5, delay: stat.delay }}
               >
                 <div className="inline-flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
                     {stat.icon}
                   </div>
                 </div>
-                <div className="text-4xl font-bold mb-2 neon-text">{stat.value}</div>
-                <div className="text-white/80">{stat.label}</div>
+                <div className="text-4xl font-bold mb-2 text-white">{stat.value}</div>
+                <div className="text-white/90">{stat.label}</div>
               </motion.div>
             ))}
           </div>
