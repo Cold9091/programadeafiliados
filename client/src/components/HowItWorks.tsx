@@ -206,31 +206,6 @@ export default function HowItWorks() {
             </div>
           </div>
         </motion.div>
-        
-        {/* Video testimonial or feature showcase */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-center"
-        >
-          <h3 className="text-2xl font-bold mb-8 text-gray-800">Veja como é fácil vender websites com a CIRCULUS</h3>
-          <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl animated-border">
-            <div className="bg-gradient-to-r from-primary to-secondary p-1 rounded-2xl">
-              <div className="bg-gray-800 w-full h-full rounded-2xl flex items-center justify-center">
-                <div className="text-white text-xl">
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <p>Vídeo demonstrativo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
