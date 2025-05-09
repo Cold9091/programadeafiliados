@@ -100,22 +100,12 @@ export default function AboutSection() {
         </div>
         
         {/* Stats section */}
-        <motion.div 
-          className="bg-gradient-primary rounded-2xl p-10 shadow-xl text-white mb-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
+        <div className="bg-gradient-primary rounded-2xl p-10 shadow-xl text-white mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
-              <motion.div 
+              <div 
                 key={index} 
                 className="text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: stat.delay }}
               >
                 <div className="inline-flex items-center justify-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
@@ -124,10 +114,10 @@ export default function AboutSection() {
                 </div>
                 <div className="text-4xl font-bold mb-2 text-white">{stat.value}</div>
                 <div className="text-white/90">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
         
         {/* Mobile image */}
         <motion.div 
