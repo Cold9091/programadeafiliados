@@ -25,27 +25,24 @@ type AffiliateLevel = {
 };
 
 export default function CommissionCalculator() {
-  const [websiteType, setWebsiteType] = useState("landing");
+  const [websiteType, setWebsiteType] = useState("professional"); // Começa com o pacote profissional (o mais popular)
   const [numSales, setNumSales] = useState(5);
-  const [level, setLevel] = useState("bronze");
+  const [level, setLevel] = useState("pro"); // Começa com o nível Pro
   const [result, setResult] = useState({ monthly: 0, annual: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
-  // Website Types and their base prices
+  // Website Types and their base prices - alinhados com a tabela de comissões
   const websiteTypes = {
-    landing: { name: "Landing Page", price: 100000 },
-    business: { name: "Website Empresarial", price: 250000 },
-    ecommerce: { name: "E-commerce", price: 500000 },
-    custom: { name: "Projeto Personalizado", price: 800000 },
+    basic: { name: "Pacote Básico", price: 90000 },
+    professional: { name: "Pacote Profissional", price: 140000 },
+    premium: { name: "Pacote Premium", price: 190000 },
   };
 
-  // Affiliate Levels and their commission rates
+  // Affiliate Levels and their commission rates - alinhados com a tabela de comissões
   const affiliateLevels: Record<string, AffiliateLevel> = {
-    bronze: { name: "Bronze", color: "#CD7F32", commissionRate: 0.15 },
-    prata: { name: "Prata", color: "#C0C0C0", commissionRate: 0.20 },
-    ouro: { name: "Ouro", color: "#FFD700", commissionRate: 0.25 },
-    platina: { name: "Platina", color: "#E5E4E2", commissionRate: 0.30 },
-    diamante: { name: "Diamante", color: "#B9F2FF", commissionRate: 0.35 },
+    iniciante: { name: "Iniciante", color: "#3B82F6", commissionRate: 0.22 }, // Média de 22% para Básico
+    pro: { name: "Pro", color: "#8B5CF6", commissionRate: 0.31 }, // Média de 31% para Pro
+    whiteLabel: { name: "White-Label", color: "#14B8A6", commissionRate: 0.39 }, // Média de 39% para White-Label
   };
 
   // Calculate commission based on user inputs
@@ -221,7 +218,7 @@ export default function CommissionCalculator() {
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Seu Nível de Afiliado
                   </label>
-                  <div className="grid grid-cols-5 gap-2">
+                  <div className="grid grid-cols-3 gap-2">
                     {Object.entries(affiliateLevels).map(([key, value]) => (
                       <button
                         key={key}

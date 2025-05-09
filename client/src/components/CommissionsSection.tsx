@@ -34,19 +34,19 @@ export default function CommissionsSection() {
 
   const examples = [
     {
-      title: "5 vendas Premium (PRO)",
+      title: "5 vendas Pacote Premium (Pro)",
       value: "300.000 Kz",
       timeframe: "em até 2 semanas",
       icon: <TrendingUp />
     },
     {
-      title: "10 vendas Professional (PRO)",
+      title: "10 vendas Pacote Profissional (Pro)",
       value: "400.000 Kz",
       timeframe: "em até 3 semanas",
       icon: <BarChart />
     },
     {
-      title: "10 vendas Premium (White-Label)",
+      title: "10 vendas Pacote Premium (White-Label)",
       value: "700.000 Kz",
       timeframe: "em até 1 mês",
       icon: <PieChart />
