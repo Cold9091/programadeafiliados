@@ -99,26 +99,6 @@ export default function AboutSection() {
           ))}
         </div>
         
-        {/* Stats section */}
-        <div className="bg-gradient-primary rounded-2xl p-10 shadow-xl text-white mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <div 
-                key={index} 
-                className="text-center"
-              >
-                <div className="inline-flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
-                    {stat.icon}
-                  </div>
-                </div>
-                <div className="text-4xl font-bold mb-2 text-white">{stat.value}</div>
-                <div className="text-white/90">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-        
         {/* Mobile image */}
         <motion.div 
           className="flex justify-center"
