@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Clock, ArrowRight, Tag, User, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 type BlogPost = {
   id: number;
@@ -100,9 +101,11 @@ export default function BlogSection() {
           </div>
           
           <div className="mt-6 md:mt-0">
-            <Button variant="outline" className="flex items-center gap-2">
-              Ver Todas as Publicações <ChevronRight className="w-4 h-4" />
-            </Button>
+            <Link href="/blog">
+              <Button variant="outline" className="flex items-center gap-2">
+                Ver Todas as Publicações <ChevronRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
         
@@ -165,10 +168,12 @@ export default function BlogSection() {
                   ))}
                 </div>
                 
-                <Button variant="link" className="p-0 h-auto text-primary flex items-center group">
-                  <span>Ler artigo completo</span>
-                  <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <Link href={`/blog/${post.id}`}>
+                  <Button variant="link" className="p-0 h-auto text-primary flex items-center group">
+                    <span>Ler artigo completo</span>
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           ))}
