@@ -89,8 +89,8 @@ export default function RegistrationForm() {
     // Preparar o texto da mensagem
     const mensaje = `*Novo Registro de Afiliado*\n\n*Nome:* ${values.nome}\n*Email:* ${values.email}\n*WhatsApp:* ${values.whatsapp}\n*Província:* ${values.provincia}\n*Área de Atuação:* ${values.atuacao}`;
     
-    // Número do WhatsApp para enviar a mensagem (adicione seu número aqui)
-    const whatsappNumber = "+244938151510"; // Substitua pelo seu número com código do país
+    // Número do WhatsApp para enviar a mensagem
+    const whatsappNumber = "+244931475544"; // Número correto para envio das mensagens
     
     // Criar a URL para o WhatsApp
     const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(mensaje)}`;
