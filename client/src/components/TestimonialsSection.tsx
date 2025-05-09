@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -8,15 +8,12 @@ type Testimonial = {
   name: string;
   role: string;
   comment: string;
-  image: string;
   rating: number;
   location: string;
 };
 
 export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isAutoplay, setIsAutoplay] = useState(true);
-  const autoplayRef = useRef<NodeJS.Timeout | null>(null);
   
   const testimonials: Testimonial[] = [
     {
@@ -24,7 +21,6 @@ export default function TestimonialsSection() {
       name: "Carlos Mendes",
       role: "Afiliado Diamante",
       comment: "Nunca imaginei que conseguiria uma renda extra tão significativa. Em apenas 3 meses como afiliado, já vendi 12 websites e a comissão transformou minha vida financeira. O melhor é que o processo é muito simples!",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
       rating: 5,
       location: "Luanda"
     },
@@ -33,7 +29,6 @@ export default function TestimonialsSection() {
       name: "Maria Fernanda",
       role: "Afiliada Platina",
       comment: "Comecei sem experiência em vendas, mas com o suporte e materiais que a CIRCULUS oferece, consegui fazer minhas primeiras vendas na primeira semana. Os treinamentos são excelentes e o suporte é incrível.",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
       rating: 5,
       location: "Benguela"
     },
@@ -42,7 +37,6 @@ export default function TestimonialsSection() {
       name: "Pedro Silva",
       role: "Afiliado Ouro",
       comment: "Como estudante universitário, precisava de um trabalho flexível. O programa de afiliados da CIRCULUS me permite trabalhar no meu próprio tempo e ainda assim gerar uma renda consistente todos os meses.",
-      image: "https://randomuser.me/api/portraits/men/22.jpg",
       rating: 4,
       location: "Huambo"
     },
@@ -51,7 +45,6 @@ export default function TestimonialsSection() {
       name: "Ana Beatriz",
       role: "Afiliada Prata",
       comment: "O que mais me impressiona é a rapidez dos pagamentos. Sempre recebo minhas comissões dentro do prazo e o processo é totalmente transparente. Já indiquei para vários amigos!",
-      image: "https://randomuser.me/api/portraits/women/29.jpg",
       rating: 5,
       location: "Cabinda"
     },
@@ -64,33 +57,6 @@ export default function TestimonialsSection() {
   const prevTestimonial = () => {
     setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
-
-  const startAutoplay = () => {
-    if (autoplayRef.current) clearInterval(autoplayRef.current);
-    autoplayRef.current = setInterval(() => {
-      nextTestimonial();
-    }, 5000);
-  };
-
-  const stopAutoplay = () => {
-    if (autoplayRef.current) {
-      clearInterval(autoplayRef.current);
-      autoplayRef.current = null;
-    }
-  };
-
-  // Handle autoplay
-  useEffect(() => {
-    if (isAutoplay) {
-      startAutoplay();
-    } else {
-      stopAutoplay();
-    }
-    
-    return () => {
-      if (autoplayRef.current) clearInterval(autoplayRef.current);
-    };
-  }, [isAutoplay, activeIndex]);
 
   return (
     <section id="depoimentos" className="py-24 overflow-hidden relative">
@@ -121,18 +87,14 @@ export default function TestimonialsSection() {
         </motion.div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div 
-            className="relative overflow-hidden py-10 px-4 md:px-0"
-            onMouseEnter={() => setIsAutoplay(false)}
-            onMouseLeave={() => setIsAutoplay(true)}
-          >
-            <div className="relative h-full">
+          <div className="relative overflow-hidden py-10 px-4 md:px-0">
+            <div className="relative min-h-[300px]">
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.id}
                   className={cn(
-                    "absolute top-0 left-0 w-full transition-all duration-500 ease-in-out",
-                    index === activeIndex ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
+                    "transition-all duration-500 ease-in-out",
+                    index === activeIndex ? "block" : "hidden"
                   )}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ 
@@ -152,12 +114,10 @@ export default function TestimonialsSection() {
                           className="relative"
                           whileHover={{ scale: 1.05 }}
                         >
-                          <div className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-100 dark:border-gray-700">
-                            <img 
-                              src={testimonial.image} 
-                              alt={testimonial.name} 
-                              className="w-full h-full object-cover"
-                            />
+                          <div className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-100 dark:border-gray-700 bg-gray-100 flex items-center justify-center">
+                            <div className="text-4xl font-bold text-primary">
+                              {testimonial.name.charAt(0)}
+                            </div>
                           </div>
                           <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-md">
                             <div className="flex items-center">

@@ -15,7 +15,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import TimelineSection from "@/components/TimelineSection";
 import CommissionCalculator from "@/components/CommissionCalculator";
 import BlogSection from "@/components/BlogSection";
-import LimitedSpotsCounter from "@/components/LimitedSpotsCounter";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 
@@ -64,7 +64,6 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppButton />
-      <LimitedSpotsCounter />
       
       {/* Scroll to Top Button */}
       <AnimatePresence>
