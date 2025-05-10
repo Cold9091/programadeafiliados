@@ -150,7 +150,7 @@ export default function HowItWorks() {
                 className="h-full"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+                  src="https://img.freepik.com/fotos-gratis/grupo-de-afro-americanos-trabalhando-juntos_1303-8983.jpg?semt=ais_hybrid&w=740" 
                   alt="Reunião de negócios para discussão de websites" 
                   className="object-cover w-full h-full" 
                 />
@@ -159,7 +159,7 @@ export default function HowItWorks() {
                 <div className="p-6 text-white">
                   <div className="flex items-center mb-2">
                     <Award className="mr-2 h-5 w-5 text-yellow-400" />
-                    <span className="font-medium">Programa Premiado</span>
+                    <span className="font-medium">Programa Inovador</span>
                   </div>
                   <h3 className="text-2xl font-bold">Oportunidade Exclusiva em Angola</h3>
                 </div>
