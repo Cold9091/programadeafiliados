@@ -49,14 +49,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <CommissionsSection />
+        <CommissionCalculator />
         <AboutSection />
         <StatsCounter />
         <HowItWorks />
         <TimelineSection />
         <LevelsSection />
         <TestimonialsSection />
-        <CommissionsSection />
-        <CommissionCalculator />
         <BenefitsSection />
         <BlogSection />
         <FAQSection />
