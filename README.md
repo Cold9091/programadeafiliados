@@ -16,8 +16,17 @@ Site institucional responsivo para o Programa de Afiliados CIRCULUS, projetado p
 - React.js (frontend)
 - TypeScript
 - Tailwind CSS
+- Express.js (backend)
 - Princípios de design responsivo
 - Suporte à internacionalização
+
+## Documentação
+
+Este projeto inclui documentação detalhada para os diferentes aspectos do desenvolvimento e implantação:
+
+- [Guia de Desenvolvimento](./DEVELOPMENT.md) - Instruções completas para configuração do ambiente de desenvolvimento local
+- [Configuração do Git](./GIT_SETUP.md) - Instruções passo a passo para configurar o Git e enviar o código para o GitHub
+- [Guia de Deploy](./DEPLOY.md) - Instruções detalhadas para fazer o deploy no Vercel
 
 ## Deploy no Vercel
 
@@ -42,6 +51,14 @@ Site institucional responsivo para o Programa de Afiliados CIRCULUS, projetado p
 - O formulário de registro redireciona automaticamente para o WhatsApp quando um novo afiliado se cadastra
 - Não é necessária nenhuma configuração adicional para notificações, pois são tratadas diretamente pelo cliente
 - O site é totalmente responsivo, funcionando bem em dispositivos móveis e desktop
+
+## Exportação do Projeto
+
+Para exportar o projeto para desenvolvimento local:
+
+1. Execute o script `export-project.sh`
+2. Faça download do arquivo ZIP gerado
+3. Descompacte em seu ambiente local e siga as instruções em [DEVELOPMENT.md](./DEVELOPMENT.md)
 
 ## Desenvolvimento local
 
