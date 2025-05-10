@@ -286,7 +286,7 @@ export default function BenefitsSection() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur-xl transform -rotate-6"></div>
                   <img 
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500&q=80" 
+                    src="https://img.freepik.com/fotos-gratis/pessoas-no-escritorio-durante-um-dia-de-trabalho_23-2150690136.jpg?semt=ais_hybrid&w=740" 
                     alt="Profissionais trabalhando em computadores" 
                     className="rounded-xl shadow-xl relative z-10 w-full" 
                   />
@@ -296,8 +296,8 @@ export default function BenefitsSection() {
                         <Award className="h-6 w-6" />
                       </div>
                       <div>
-                        <div className="text-sm font-medium text-gray-500">Prêmio</div>
-                        <div className="font-bold">Melhor Programa 2024</div>
+                        <div className="text-sm font-medium text-gray-500">Meta</div>
+                        <div className="font-bold">Ser o Melhor Programa 2025</div>
                       </div>
                     </div>
                   </div>
