@@ -33,18 +33,14 @@ Site institucional responsivo para o Programa de Afiliados CIRCULUS, projetado p
 2. Faça login na sua conta Vercel
 3. Clique em "New Project"
 4. Importe o repositório
-5. Configure as seguintes variáveis de ambiente nas configurações do projeto:
-   - `EMAIL_SERVICE`: Serviço de email (por exemplo, gmail)
-   - `EMAIL_USER`: Seu endereço de email para envio de notificações
-   - `EMAIL_PASSWORD`: Senha do app (para Gmail, gere uma senha de app específica)
-   - `EMAIL_RECIPIENT`: Email para receber as notificações de novos cadastros
+5. Configure a variável de ambiente nas configurações do projeto:
    - `NODE_ENV`: Defina como "production"
 6. Clique em "Deploy"
 
 ### Notas adicionais
 
-- O formulário de registro envia emails de notificação quando novos afiliados se cadastram
-- Certifique-se de configurar corretamente as variáveis de ambiente para habilitar o envio de emails
+- O formulário de registro redireciona automaticamente para o WhatsApp quando um novo afiliado se cadastra
+- Não é necessária nenhuma configuração adicional para notificações, pois são tratadas diretamente pelo cliente
 - O site é totalmente responsivo, funcionando bem em dispositivos móveis e desktop
 
 ## Desenvolvimento local
