@@ -48,10 +48,10 @@ export default function Header() {
   };
 
   const menuItems = [
+    { name: t("header.commissions"), href: "#comissoes", icon: "💰" },
     { name: t("header.about"), href: "#sobre", icon: "✨" },
     { name: t("header.how"), href: "#como-funciona", icon: "🔄" },
     { name: "Níveis", href: "#niveis", icon: "⭐" },
-    { name: t("header.commissions"), href: "#comissoes", icon: "💰" },
     { name: t("header.faq"), href: "#faq", icon: "❓" },
   ];
 
