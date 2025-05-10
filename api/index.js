@@ -2,7 +2,6 @@
 import express from 'express';
 import { insertRegistrationSchema } from '../shared/schema';
 import { storage } from '../server/storage';
-import nodemailer from 'nodemailer';
 import { ZodError } from 'zod';
 
 // Setup Express app
@@ -39,15 +38,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// Configure nodemailer
-const transporter = nodemailer.createTransport({
-  service: process.env.EMAIL_SERVICE || "gmail",
-  auth: {
-    user: process.env.EMAIL_USER || "circulusafiliados@gmail.com",
-    pass: process.env.EMAIL_PASSWORD // Use app password for Gmail
-  }
-});
-
 // Handle affiliate registration
 app.post("/api/register", async (req, res) => {
   try {
@@ -57,31 +47,9 @@ app.post("/api/register", async (req, res) => {
     // Save registration to storage
     const registration = await storage.createRegistration(validatedData);
     
-    // Send email notification if credentials are available
-    if (process.env.EMAIL_PASSWORD) {
-      const mailOptions = {
-        from: process.env.EMAIL_USER || "circulusafiliados@gmail.com",
-        to: process.env.EMAIL_RECIPIENT || "circulusafiliados@gmail.com",
-        subject: "Novo Cadastro de Afiliado CIRCULUS",
-        html: `
-          <h2>Novo cadastro no Programa de Afiliados</h2>
-          <p><strong>Nome:</strong> ${registration.nome}</p>
-          <p><strong>WhatsApp:</strong> ${registration.whatsapp}</p>
-          <p><strong>Email:</strong> ${registration.email}</p>
-          <p><strong>Província:</strong> ${registration.provincia}</p>
-          <p><strong>Tipo de Atuação:</strong> ${registration.atuacao}</p>
-          <p><strong>Data:</strong> ${new Date().toLocaleString()}</p>
-        `
-      };
-      
-      try {
-        // Attempt to send email
-        await transporter.sendMail(mailOptions);
-      } catch (emailError) {
-        console.error("Error sending email: ", emailError);
-        // Continue with the request even if email fails
-      }
-    }
+    // Nota: Apenas a notificação para WhatsApp é realizada
+    // As notificações são tratadas pelo cliente que redireciona 
+    // para o WhatsApp com as informações do cadastro
     
     // Return success response
     res.status(201).json({ 

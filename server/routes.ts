@@ -1,18 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import nodemailer from "nodemailer";
 import { insertRegistrationSchema } from "@shared/schema";
 import { ZodError } from "zod";
-
-// Configure nodemailer with environment variables
-const transporter = nodemailer.createTransport({
-  service: process.env.EMAIL_SERVICE || "gmail",
-  auth: {
-    user: process.env.EMAIL_USER || "circulusafiliados@gmail.com",
-    pass: process.env.EMAIL_PASSWORD || "app_password_here" // Use app password for Gmail
-  }
-});
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Handle affiliate registration
