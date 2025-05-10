@@ -35,7 +35,7 @@ export const insertRegistrationSchema = createInsertSchema(registrations)
   })
   .extend({
     email: z.string().email({ message: "Email inválido" }),
-    whatsapp: z.string().min(9, { message: "Número de WhatsApp inválido" }),
+    whatsapp: z.string().min(9, { message: "Nome de WhatsApp inválido" }),
   });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;

@@ -32,7 +32,7 @@ import { AffiliateRegistration } from "@/lib/types";
 // Form validation schema
 const formSchema = z.object({
   nome: z.string().min(3, { message: "Nome completo é obrigatório" }),
-  whatsapp: z.string().min(9, { message: "Número de WhatsApp inválido" }),
+  whatsapp: z.string().min(9, { message: "Nome de WhatsApp inválido" }),
   email: z.string().email({ message: "Email inválido" }),
   provincia: z.string().min(1, { message: "Selecione sua província" }),
   atuacao: z.string().min(1, { message: "Selecione seu tipo de atuação" }),
@@ -324,7 +324,7 @@ export default function RegistrationForm() {
                               <FormItem className="mb-6">
                                 <FormLabel className="flex items-center text-gray-700">
                                   <MessageSquare className="w-4 h-4 mr-2 text-primary" />
-                                  Número de WhatsApp <span className="text-red-500 ml-1">*</span>
+                                  Nome de WhatsApp <span className="text-red-500 ml-1">*</span>
                                 </FormLabel>
                                 <FormControl>
                                   <Input 
