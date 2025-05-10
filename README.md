@@ -1,139 +1,60 @@
 # CIRCULUS - Programa de Afiliados
 
-![CIRCULUS](https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3)
+Site institucional responsivo para o Programa de Afiliados CIRCULUS, projetado para fornecer informações transparentes e envolventes sobre níveis de afiliados e estruturas de comissões.
 
-Website institucional responsivo para o Programa de Afiliados da CIRCULUS, projetado para fornecer informações claras sobre níveis de afiliação, estrutura de comissões e conteúdo educativo adaptado ao mercado angolano.
+## Principais Recursos
 
-## 🌟 Características
+- Página de destino interativa com componentes dinâmicos
+- Calculadora de comissão interativa
+- Seção de depoimentos
+- Linha do tempo visual do processo de afiliação
+- Design responsivo e acessível com modo escuro/claro
+- Suporte à internacionalização
 
-- **Design Moderno e Responsivo**: Experiência visual completa em dispositivos desktop e móveis
-- **Modo Claro/Escuro**: Sistema de temas completo para preferência do usuário
-- **Multilíngue**: Suporte para Português e Inglês com detecção automática do idioma do navegador
-- **Seções Interativas**:
-  - Calculadora de Comissões
-  - Timeline Visual do processo de afiliação
-  - Depoimentos de afiliados
-  - Níveis de afiliação com comparativos
-  - Formulário de registro otimizado com envio para WhatsApp
-- **Integração com WhatsApp**: Envio automático dos formulários para WhatsApp do administrador
-- **Blog Completo**:
-  - 26 artigos detalhados sobre vendas, prospecção, ferramentas e mentalidade
-  - Sistema de filtragem por categorias e tags
-  - Conteúdo adaptado à realidade angolana
-  - Visualização de artigos relacionados
-  - Informações de autor e compartilhamento
+## Tecnologias
 
-## 🚀 Tecnologias Utilizadas
+- React.js (frontend)
+- TypeScript
+- Tailwind CSS
+- Princípios de design responsivo
+- Suporte à internacionalização
 
-- **Frontend**:
-  - React.js + TypeScript
-  - TailwindCSS para estilização
-  - Framer Motion para animações
-  - ShadcnUI para componentes
-  - React Query para gerenciamento de estado
-  - Wouter para roteamento
-  - i18next para internacionalização
-  - react-i18next para integração de traduções no React
-  - i18next-browser-languagedetector para detecção automática de idioma
-  
-- **Backend**:
-  - Node.js + Express
-  - Armazenamento em memória para prototipagem rápida
-  
-- **Integrações**:
-  - API do WhatsApp para mensagens diretas
-  - Sistema de idiomas com detecção automática
-
-## 📋 Páginas Principais
-
-1. **Home**: Landing page principal com todas as seções informativas
-2. **Blog**: Listagem de artigos com sistema de filtragem
-3. **Artigo Individual**: Visualização detalhada de cada artigo do blog
-4. **Página 404**: Tratamento para rotas não existentes
-
-## 🔧 Instalação e Execução
+## Deploy no Vercel
 
 ### Pré-requisitos
 
-- Node.js (v14+)
-- NPM (v6+)
+- Conta no Vercel
+- Git instalado
+- Node.js instalado
 
-### Passos para Execução
+### Passos para deploy
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/circulus-afiliados.git
-   cd circulus-afiliados
-   ```
+1. Faça o fork ou clone este repositório para sua conta no GitHub/GitLab/Bitbucket
+2. Faça login na sua conta Vercel
+3. Clique em "New Project"
+4. Importe o repositório
+5. Configure as seguintes variáveis de ambiente nas configurações do projeto:
+   - `EMAIL_SERVICE`: Serviço de email (por exemplo, gmail)
+   - `EMAIL_USER`: Seu endereço de email para envio de notificações
+   - `EMAIL_PASSWORD`: Senha do app (para Gmail, gere uma senha de app específica)
+   - `EMAIL_RECIPIENT`: Email para receber as notificações de novos cadastros
+   - `NODE_ENV`: Defina como "production"
+6. Clique em "Deploy"
 
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
+### Notas adicionais
 
-3. Execute o projeto em modo de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
+- O formulário de registro envia emails de notificação quando novos afiliados se cadastram
+- Certifique-se de configurar corretamente as variáveis de ambiente para habilitar o envio de emails
+- O site é totalmente responsivo, funcionando bem em dispositivos móveis e desktop
 
-4. Acesse o projeto em seu navegador:
-   ```
-   http://localhost:5000
-   ```
+## Desenvolvimento local
 
-## 🎨 Personalização
+```bash
+# Instalar dependências
+npm install
 
-### Cores e Tema
+# Iniciar servidor de desenvolvimento
+npm run dev
+```
 
-O sistema de cores pode ser personalizado editando o arquivo `tailwind.config.ts`. As principais cores utilizadas são:
-
-- **primary**: Roxo/Violeta (#8033B5)
-- **primary-dark**: Tom mais escuro de roxo (#5A1C80)
-- **secondary**: Azul claro/Turquesa (#3BBCD9)
-- **accent**: Amarelo/Dourado (#FFAE33)
-
-### Conteúdo
-
-O conteúdo do blog está centralizado no arquivo `client/src/data/blogPosts.ts`. Para adicionar ou modificar artigos, edite este arquivo seguindo a estrutura existente.
-
-### Traduções e Idiomas
-
-As traduções estão disponíveis nos arquivos:
-- `client/src/locales/pt/translation.json` (Português)
-- `client/src/locales/en/translation.json` (Inglês)
-
-Para adicionar ou modificar traduções, edite estes arquivos seguindo a estrutura de chaves existente. Para adicionar um novo idioma, crie uma nova pasta com o código do idioma (ex: `fr` para francês) e adicione um arquivo `translation.json` com as mesmas chaves.
-
-### Integração WhatsApp
-
-A integração com WhatsApp está configurada no arquivo `client/src/components/RegistrationForm.tsx`. Para alterar o número de WhatsApp que receberá as mensagens, modifique a variável `whatsappNumber` com o novo número no formato internacional (com código do país).
-
-## 📱 Responsividade
-
-O site é totalmente responsivo e otimizado para:
-
-- Desktops (1200px+)
-- Tablets (768px - 1199px)
-- Smartphones (320px - 767px)
-
-## 🌐 SEO e Performance
-
-- Meta tags otimizadas para cada página
-- Lazy loading de imagens e componentes
-- Estrutura semântica de HTML
-- Texto alternativo para imagens
-
-## 🤝 Contato e Suporte
-
-Para questões relacionadas ao programa de afiliados CIRCULUS:
-- **WhatsApp**: [Grupo de Afiliados](https://chat.whatsapp.com/FpqmbYg9lop62rocgJNDgy)
-- **Telefone**: +244931475544
-- **Email**: circulus.ao@gmail.com
-
-## 📄 Licença
-
-Este projeto está sob licença privada para uso exclusivo da CIRCULUS.
-
----
-
-Desenvolvido com 💜 por [Seu Nome/Empresa]
+O servidor de desenvolvimento estará disponível em http://localhost:5000
